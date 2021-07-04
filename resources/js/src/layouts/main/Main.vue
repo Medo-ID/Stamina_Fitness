@@ -2,9 +2,7 @@
     File Name: Main.vue
     Description: Main layout
     ----------------------------------------------------------------------------------------
-    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-    Author: Pixinvent
-    Author URL: http://www.themeforest.net/user/pixinvent
+    
 ========================================================================================== -->
 
 
@@ -188,13 +186,6 @@ export default {
           content : 'Customize template based on your preference',
           params  : {
             placement: 'left'
-          }
-        },
-        {
-          target  : '.vs-button.buy-now',
-          content : 'Buy this awesomeness at affordable price!',
-          params  : {
-            placement: 'top'
           }
         }
       ]

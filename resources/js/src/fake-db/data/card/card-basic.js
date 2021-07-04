@@ -4,13 +4,13 @@ const data = {
   pixinvent_product_1: {
     img: require('@assets/images/pages/content-img-1.jpg'),
     title: 'Vuexy Admin',
-    subtitle: 'By Pixinvent Creative Studio',
+    subtitle: 'By Stamina Creative Studio',
     subtitle_2: 'Elite Author'
   },
   pixinvent_product_sales_1: {
     img: require('@assets/images/pages/content-img-2.jpg'),
     title: 'Vuexy Admin',
-    subtitle: 'By Pixinvent Creative Studio',
+    subtitle: 'By Stamina Creative Studio',
     footer_text_left_value: '$ 4785.78',
     footer_text_left_label: 'Income',
     footer_text_right_value: '12 June 2019',
@@ -118,7 +118,7 @@ const data = {
   ],
   item_reviews_12: {
     title: 'Vuexy Admin',
-    subtitle: 'by Pixinvent Creative Studio',
+    subtitle: 'by Stamina Creative Studio',
     img: require('@assets/images/pages/content-img-4.jpg'),
     meta: {
       likes: 368,
