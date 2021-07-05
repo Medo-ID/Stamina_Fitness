@@ -12,10 +12,10 @@
       <!-- CARD 1: CONGRATS -->
       <div class="vx-col w-full lg:w-1/2 mb-base">
         <vx-card slot="no-body" class="text-center bg-primary-gradient greet-user">
-                    <img src="@assets/images/elements/decore-left.png" class="decore-left" alt="Decore Left" width="200" >
-                    <img src="@assets/images/elements/decore-right.png" class="decore-right" alt="Decore Right" width="175">
+                    <!-- <img src="@assets/images/elements/decore-left.png" class="decore-left" alt="Decore Left" width="200" >
+                    <img src="@assets/images/elements/decore-right.png" class="decore-right" alt="Decore Right" width="175"> -->
           <feather-icon icon="AwardIcon" class="p-6 mb-8 bg-primary inline-flex rounded-full text-white shadow" svgClasses="h-8 w-8"></feather-icon>
-          <h1 class="mb-6 text-white">Congratulations {{ checkpointReward.userName }},</h1>
+          <h1 class="mb-6 text-white">Welcome {{ checkpointReward.userName }},</h1>
           <p class="xl:w-3/4 lg:w-4/5 md:w-2/3 w-4/5 mx-auto text-white">You have done <strong>{{ checkpointReward.progress }}</strong> more sales today. Check your new badge in your profile.</p>
         </vx-card>
       </div>
@@ -126,14 +126,14 @@
         <div class="vx-row">
             <!-- CARD 6: Product Orders -->
             <div class="vx-col w-full lg:w-1/3 mb-base">
-                <vx-card title="Product Orders">
+                <!-- <vx-card title="Product Orders"> -->
                     <!-- CARD ACTION -->
-                    <template slot="actions">
+                    <!-- <template slot="actions">
                         <change-time-duration-dropdown />
-                    </template>
+                    </template> -->
 
                     <!-- Chart -->
-                    <div slot="no-body">
+                    <!-- <div slot="no-body">
                         <vue-apex-charts type="radialBar" height="420" :options="analyticsData.productOrdersRadialBar.chartOptions" :series="productsOrder.series" />
                     </div>
 
@@ -146,12 +146,12 @@
                             <span>{{ orderData.counts }}</span>
                         </li>
                     </ul>
-                </vx-card>
+                </vx-card> -->
             </div>
 
             <!-- CARD 7: Sales Stats -->
             <div class="vx-col w-full lg:w-1/3 mb-base">
-              <vx-card title="Sales Stats" subtitle="Last 6 Months">
+              <!-- <vx-card title="Sales Stats" subtitle="Last 6 Months">
                 <template slot="actions">
                   <feather-icon icon="MoreVerticalIcon" svgClasses="w-6 h-6 text-grey"></feather-icon>
                 </template>
@@ -162,21 +162,21 @@
                 <div slot="no-body-bottom">
                   <vue-apex-charts type="radar" height="385" :options="analyticsData.statisticsRadar.chartOptions" :series="salesRadar.series" />
                 </div>
-              </vx-card>
+              </vx-card> -->
             </div>
 
             <!-- CARD 8: Activity Timeline -->
             <div class="vx-col w-full lg:w-1/3 mb-base">
-                <vx-card title="Activity Timeline">
+                <!-- <vx-card title="Activity Timeline">
                     <vx-timeline :data="timelineData" />
-                </vx-card>
+                </vx-card> -->
             </div>
         </div>
 
     <div class="vx-row">
       <!-- CARD 9: DISPATCHED ORDERS -->
       <div class="vx-col w-full">
-        <vx-card title="Dispatched Orders">
+        <!-- <vx-card title="Dispatched Orders">
           <div slot="no-body" class="mt-4">
             <vs-table :data="dispatchedOrders" class="table-dark-inverted">
               <template slot="thead">
@@ -224,7 +224,7 @@
             </vs-table>
           </div>
 
-        </vx-card>
+        </vx-card> -->
       </div>
     </div>
 

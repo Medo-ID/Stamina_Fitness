@@ -44,24 +44,24 @@ const router = new Router({
         // =============================================================================
         {
           path: '/',
-          redirect: '/dashboard/analytics'
+          redirect: '/dashboard'
         },
         {
-          path: '/dashboard/analytics',
+          path: '/dashboard',
           name: 'dashboard-analytics',
           component: () => import('./views/DashboardAnalytics.vue'),
           meta: {
             rule: 'editor'
           }
         },
-        {
-          path: '/dashboard/ecommerce',
-          name: 'dashboard-ecommerce',
-          component: () => import('./views/DashboardECommerce.vue'),
-          meta: {
-            rule: 'admin'
-          }
-        },
+        // {
+        //   path: '/dashboard/ecommerce',
+        //   name: 'dashboard-ecommerce',
+        //   component: () => import('./views/DashboardECommerce.vue'),
+        //   meta: {
+        //     rule: 'admin'
+        //   }
+        // },
 
 
         // =============================================================================

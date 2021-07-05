@@ -22,7 +22,7 @@
             <span class="ml-2">Profile</span>
           </li>
 
-          <li
+          <!-- <li
             class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
             @click="$router.push('/apps/email').catch(() => {})">
             <feather-icon icon="MailIcon" svgClasses="w-4 h-4" />
@@ -34,7 +34,7 @@
             @click="$router.push('/apps/todo').catch(() => {})">
             <feather-icon icon="CheckSquareIcon" svgClasses="w-4 h-4" />
             <span class="ml-2">Tasks</span>
-          </li>
+          </li> -->
 
           <li
             class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
@@ -47,7 +47,7 @@
             class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
             @click="$router.push('/apps/eCommerce/wish-list').catch(() => {})">
             <feather-icon icon="HeartIcon" svgClasses="w-4 h-4" />
-            <span class="ml-2">Wish List</span>
+            <span class="ml-2">Favorits</span>
           </li>
 
           <vs-divider class="m-1" />

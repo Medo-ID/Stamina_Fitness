@@ -271,7 +271,7 @@ export default {
       set (val) { this.$emit('toggleHideScrollToTop', val) }
     },
     navbarColorInitial () {
-      return this.$store.state.theme === 'dark' ? '#10163a' : '#fff'
+      return this.$store.state.theme === 'dark' ? '#111821' : '#fff'
     },
     navbarColorOptionClasses () {
       return (color) => {

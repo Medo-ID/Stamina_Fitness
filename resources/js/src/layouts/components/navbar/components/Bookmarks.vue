@@ -115,7 +115,7 @@ export default {
       }
     },
     textColor () {
-      return {'text-white': this.$store.state.mainLayoutType === 'vertical' && this.navbarColor !== (this.$store.state.theme === 'dark' ? '#10163a' : '#fff') }
+      return {'text-white': this.$store.state.mainLayoutType === 'vertical' && this.navbarColor !== (this.$store.state.theme === 'dark' ? '#111821' : '#fff') }
     }
   },
   methods: {

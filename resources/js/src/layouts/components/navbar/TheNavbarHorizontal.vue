@@ -12,18 +12,18 @@
   <div class="vx-navbar-wrapper navbar-full p-0">
     <vs-navbar class="navbar-custom navbar-skelton" :class="navbarClasses"  :style="navbarStyle" :color="navbarColor">
 
-      <bookmarks :navbarColor="navbarColor" v-if="windowWidth >= 992" />
+      <!-- <bookmarks :navbarColor="navbarColor" v-if="windowWidth >= 992" /> -->
 
       <router-link tag="div" to="/" class="vx-logo cursor-pointer mx-auto flex items-center">
         <logo class="w-10 mr-4 fill-current text-primary" />
-        <span class="vx-logo-text text-primary">Vuexy</span>
+        <span class="vx-logo-text text-primary">Stamina Fitness</span>
       </router-link>
 
       <i18n />
 
       <search-bar />
 
-      <cart-drop-down />
+      <!-- <cart-drop-down /> -->
 
       <notification-drop-down />
 
@@ -73,9 +73,9 @@ export default {
 
       if (this.isThemedark === 'dark') {
         if (color === '#fff') {
-          color = '#10163a'
+          color = '#111821'
         } else {
-          color = '#262c49'
+          color = '#1b2634'
         }
       }
 

@@ -196,7 +196,7 @@ export default {
       this.routeTitle = this.$route.meta.pageTitle
     },
     isThemeDark (val) {
-      const color = this.navbarColor === '#fff' && val ? '#10163a' : '#fff'
+      const color = this.navbarColor === '#fff' && val ? '#111821' : '#fff'
       this.updateNavbarColor(color)
     },
     '$store.state.mainLayoutType' (val) {
@@ -242,7 +242,7 @@ export default {
       this.routeTitle = title
     },
     updateNavbar (val) {
-      if (val === 'static') this.updateNavbarColor(this.isThemeDark ? '#10163a' : '#fff')
+      if (val === 'static') this.updateNavbarColor(this.isThemeDark ? '#111821' : '#fff')
       this.navbarType = val
     },
     updateNavbarColor (val) {
@@ -269,7 +269,7 @@ export default {
     }
   },
   created () {
-    const color = this.navbarColor === '#fff' && this.isThemeDark ? '#10163a' : this.navbarColor
+    const color = this.navbarColor === '#fff' && this.isThemeDark ? '#111821' : this.navbarColor
     this.updateNavbarColor(color)
     this.setNavMenuVisibility(this.$store.state.mainLayoutType)
 

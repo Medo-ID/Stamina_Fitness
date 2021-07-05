@@ -55,7 +55,7 @@ export default{
 .theme-dark{
   #tailwind-grid-demo {
     .bg-grid-color {
-        background-color: #262c49; // $table-dark-stripe
+        background-color: #1b2634; // $table-dark-stripe
     }
 
     .bg-grid-color-secondary {
