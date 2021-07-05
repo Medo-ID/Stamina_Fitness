@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/* Programs */
+Route::get('programs', 'ProgramController@index');
+Route::get('programs/{program}', 'ProgramController@show');
+Route::post('programs', 'ProgramController@store');
+Route::put('programs/{program}', 'ProgramController@update');
+Route::delete('programs/{program}', 'ProgramController@delete');

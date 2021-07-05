@@ -151,6 +151,7 @@ mock.onPost('/api/apps/todo/tasks/').reply((request) => {
 })
 
 // GET: Fetch Todos
+/*
 mock.onGet('api/apps/todo/tasks').reply((request) => {
 
   const filter = request.params.filter
@@ -179,6 +180,7 @@ mock.onGet('api/apps/todo/tasks').reply((request) => {
 
   return [200, JSON.parse(JSON.stringify(filteredTasks)).reverse()]
 })
+*/
 
 // GET: Fetch tags
 mock.onGet('api/apps/todo/tags').reply(() => {

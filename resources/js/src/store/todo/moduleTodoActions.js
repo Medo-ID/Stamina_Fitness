@@ -13,7 +13,7 @@ export default {
   },
   fetchTasks ({ commit }, payload) {
     return new Promise((resolve, reject) => {
-      axios.get('/api/apps/todo/tasks', { params: {filter: payload.filter} })
+      axios.get('/programs', { params: {filter: payload.filter} })
         .then((response) => {
           commit('SET_TASKS', response.data)
           resolve(response)
