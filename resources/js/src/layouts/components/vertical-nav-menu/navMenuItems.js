@@ -55,7 +55,7 @@ export default [
         url: '/apps/user/user-view/268',
         name: 'Profile',
         icon: 'UserIcon',
-        slug: 'app-user-view',
+        slug: 'Profile',
         i18n: 'Profile',
         // submenu: [
         //   {
@@ -97,10 +97,10 @@ export default [
             //   i18n: 'ItemDetails'
             // },
           {
-              url: '/apps/eCommerce/wish-list',
-              name: 'Favorits Programs',
-              slug: 'Favorits Programs',
-              i18n: 'Favorits Programs'
+            url: '/apps/eCommerce/wish-list',
+            name: 'Favorits Programs',
+            slug: 'Favorits Programs',
+            i18n: 'Favorits Programs'
           },
           {
             url: '/apps/eCommerce/checkout',

@@ -4,8 +4,8 @@ export default {
     key: "title",
     data: [
       // DASHBOARDS
-      {title: "Dashboard",        url: "/dashboard",                icon: "HomeIcon",           is_bookmarked: false},
-      // {title: "eCommerce Dashboard",        url: "/dashboard/ecommerce",                icon: "HomeIcon",           is_bookmarked: true},
+      {title: "Dashboard",                  url: "/dashboard",                          icon: "HomeIcon",           is_bookmarked: false},
+      // {title: "eCommerce Dashboard",     url: "/dashboard/ecommerce",                icon: "HomeIcon",           is_bookmarked: true},
 
       // APPS
       // {title: "Todo",                    url: "/apps/todo",                          icon: "CheckSquareIcon",    is_bookmarked: false},
@@ -15,7 +15,7 @@ export default {
       {title: "Programs",                   url: "/apps/eCommerce/shop",                icon: "ShoppingCartIcon",   is_bookmarked: false},
       {title: "All Programs",               url: "/apps/eCommerce/item",                icon: "SmartphoneIcon",     is_bookmarked: false},
       {title: "Favorits Programs",          url: "/apps/eCommerce/wish-list",           icon: "HeartIcon",          is_bookmarked: false},
-      {title: "Add Program",                url: "/apps/eCommerce/checkout",            icon: "CreditCardIcon",     is_bookmarked: false},
+      {title: "Add Program",                url: "/apps/eCommerce/checkout",            icon: "PlusSquareIcon",     is_bookmarked: false},
       // {title: "User List",               url: "/apps/user/user-list",                icon: "ListIcon",           is_bookmarked: false},
       {title: "User View",                  url: "/apps/user/user-view/268",            icon: "UserIcon",           is_bookmarked: false},
       // {title: "User Edit",               url: "/apps/user/user-edit/268",            icon: "EditIcon",           is_bookmarked: false},
