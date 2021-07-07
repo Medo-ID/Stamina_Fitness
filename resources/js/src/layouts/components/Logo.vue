@@ -1,5 +1,5 @@
 <template>
-<div>   </div>
+    <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"><path d="M7.89,20,11,15,20.19.24h0v0A17,17,0,0,0,17.5,0,17.51,17.51,0,0,0,.17,15,17.88,17.88,0,0,0,.17,20,17.5,17.5,0,0,0,14.71,34.78L17.06,20Z" fill="#f1c513"/><path d="M34.83,15A17.51,17.51,0,0,0,20.2.21v0h0L17.84,15H27L24,20,14.72,34.78A18.19,18.19,0,0,0,17.5,35,17.51,17.51,0,0,0,34.83,20a17.88,17.88,0,0,0,0-4.92Z" fill="#f1c513"/></svg>
   <!-- <svg viewBox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35">
       <defs>
           <linearGradient x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%" id="linearGradient-1">

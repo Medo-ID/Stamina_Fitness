@@ -22,12 +22,12 @@
 
       <!-- CARD 2: SUBSCRIBERS GAINED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
-        <statistics-card-line icon="UsersIcon" statistic="92.6k" statisticTitle="Subscribers Gained" :chartData="subscribersGained.series" type="area"></statistics-card-line>
+        <!-- <statistics-card-line icon="UsersIcon" statistic="92.6k" statisticTitle="Subscribers Gained" :chartData="subscribersGained.series" type="area"></statistics-card-line> -->
       </div>
 
       <!-- CARD 3: ORDER RECIEVED -->
       <div class="vx-col w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 mb-base">
-        <statistics-card-line icon="ShoppingBagIcon" statistic="97.5K" statisticTitle="Orders Received" :chartData="ordersRecevied.series" color="warning" type="area"></statistics-card-line>
+        <!-- <statistics-card-line icon="ShoppingBagIcon" statistic="97.5K" statisticTitle="Orders Received" :chartData="ordersRecevied.series" color="warning" type="area"></statistics-card-line> -->
       </div>
     </div>
 
@@ -36,16 +36,17 @@
       <!-- CARD 4: SESSION -->
       <div class="vx-col w-full md:w-1/2 mb-base">
         <vx-card>
-          <div class="vx-row flex-col-reverse md:flex-col-reverse sm:flex-row lg:flex-row">
+          <!-- <div class="vx-row flex-col-reverse md:flex-col-reverse sm:flex-row lg:flex-row"> -->
+
 
             <!-- LEFT COL -->
-            <div class="vx-col w-full md:w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 flex flex-col justify-between" v-if="salesBarSession.analyticsData">
+            <!-- <div class="vx-col w-full md:w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 flex flex-col justify-between" v-if="salesBarSession.analyticsData">
               <div>
                 <h2 class="mb-1 font-bold">{{ salesBarSession.analyticsData.session | k_formatter }}</h2>
-                <span class="font-medium">Avg Sessions</span>
+                <span class="font-medium">Avg Sessions</span> -->
 
                 <!-- Previous Data Comparison -->
-                <p class="mt-2 text-xl font-medium">
+                <!-- <p class="mt-2 text-xl font-medium">
                   <span :class="salesBarSession.analyticsData.comparison.result >= 0 ? 'text-success' : 'text-danger'">
                     <span v-if="salesBarSession.analyticsData.comparison.result > 0">+</span>
                     <span>{{ salesBarSession.analyticsData.comparison.result }}</span>
@@ -55,10 +56,10 @@
                 </p>
               </div>
               <vs-button icon-pack="feather" icon="icon-chevrons-right" icon-after class="shadow-md w-full lg:mt-0 mt-4">View Details</vs-button>
-            </div>
+            </div> -->
 
             <!-- RIGHT COL -->
-            <div class="vx-col w-full md:w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 flex flex-col lg:mb-0 md:mb-base sm:mb-0 mb-base">
+            <!-- <div class="vx-col w-full md:w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 flex flex-col lg:mb-0 md:mb-base sm:mb-0 mb-base">
               <change-time-duration-dropdown class="self-end" />
               <vue-apex-charts type="bar" height="200" :options="analyticsData.salesBar.chartOptions" :series="salesBarSession.series" v-if="salesBarSession.series" />
             </div>
@@ -82,43 +83,42 @@
               <p>Duration: 1yr</p>
               <vs-progress class="block mt-1" :percent="90" color="success"></vs-progress>
             </div>
-          </div>
+          </div> -->
         </vx-card>
       </div>
 
       <!-- CARD 5: SUPPORT TRACKER -->
       <div class="vx-col w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mb-base">
-          <vx-card title="Support Tracker">
+          <vx-card title="">
               <!-- CARD ACTION -->
-              <template slot="actions">
-                  <change-time-duration-dropdown />
-              </template>
+              <!-- <template slot="actions">
+               </template> -->
 
-              <div slot="no-body" v-if="supportTracker.analyticsData">
-                  <div class="vx-row text-center">
+              <!-- <div slot="no-body" v-if="supportTracker.analyticsData">
+                  <div class="vx-row text-center"> -->
 
                       <!-- Open Tickets Heading -->
-                      <div class="vx-col w-full lg:w-1/5 md:w-full sm:w-1/5 flex flex-col justify-between mb-4 lg:order-first md:order-last sm:order-first order-last">
+                      <!-- <div class="vx-col w-full lg:w-1/5 md:w-full sm:w-1/5 flex flex-col justify-between mb-4 lg:order-first md:order-last sm:order-first order-last">
                           <div class="lg:ml-6 lg:mt-6 md:mt-0 md:ml-0 sm:ml-6 sm:mt-6">
                               <h1 class="font-bold text-5xl">{{ supportTracker.analyticsData.openTickets }}</h1>
                               <small>Tickets</small>
                           </div>
-                      </div>
+                      </div> -->
 
                       <!-- Chart -->
-                      <div class="vx-col w-full lg:w-4/5 md:w-full sm:w-4/5 justify-center mx-auto lg:mt-0 md:mt-6 sm:mt-0 mt-6">
+                      <!-- <div class="vx-col w-full lg:w-4/5 md:w-full sm:w-4/5 justify-center mx-auto lg:mt-0 md:mt-6 sm:mt-0 mt-6">
                           <vue-apex-charts type="radialBar" height="385" :options="analyticsData.supportTrackerRadialBar.chartOptions" :series="supportTracker.series" />
                       </div>
-                  </div>
+                  </div> -->
 
                   <!-- Support Tracker Meta Data -->
-                  <div class="flex flex-row justify-between px-8 pb-4 mt-4">
+                  <!-- <div class="flex flex-row justify-between px-8 pb-4 mt-4">
                       <p class="text-center" v-for="(val, key) in supportTracker.analyticsData.meta" :key="key">
                         <span class="block">{{ key }}</span>
                         <span class="text-2xl font-semibold">{{ val }}</span>
                       </p>
                   </div>
-              </div>
+              </div> -->
           </vx-card>
       </div>
     </div>
@@ -235,7 +235,6 @@
 import VueApexCharts from 'vue-apexcharts'
 import StatisticsCardLine from '@/components/statistics-cards/StatisticsCardLine.vue'
 import analyticsData from './ui-elements/card/analyticsData.js'
-import ChangeTimeDurationDropdown from '@/components/ChangeTimeDurationDropdown.vue'
 import VxTimeline from '@/components/timeline/VxTimeline'
 
 export default {
@@ -295,7 +294,6 @@ export default {
   components: {
     VueApexCharts,
     StatisticsCardLine,
-    ChangeTimeDurationDropdown,
     VxTimeline
   },
   created () {

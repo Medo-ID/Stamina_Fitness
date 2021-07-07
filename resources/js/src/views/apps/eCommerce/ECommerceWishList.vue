@@ -31,7 +31,7 @@
                                 @click="cartButtonClicked(item)">
                                 <feather-icon icon="ShoppingBagIcon" svgClasses="h-4 w-4" />
 
-                                <span class="text-sm font-semibold ml-2" v-if="isInCart(item.objectID)">VIEW IN CART</span>
+                                <span class="text-sm font-semibold ml-2" v-if="isInCart(item.objectID)">VIEW PROGRAM</span>
                                 <span class="text-sm font-semibold ml-2" v-else>MOVE TO CART</span>
                             </div>
                         </div>
@@ -42,8 +42,8 @@
         </div>
 
         <!-- IF NO ITEMS IN CART -->
-        <vx-card title="You don't have any items in your wish list." v-else>
-            <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse Shop</vs-button>
+        <vx-card title="You don't have any programs in your favorits list." v-else>
+            <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse Programs</vs-button>
         </vx-card>
   </div>
 </template>

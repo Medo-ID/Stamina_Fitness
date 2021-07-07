@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 const data = {
   checkpointReward: {
     userName: 'John',
-    progress: '57.6%'
+    progress: '80kg'
   },
   users: [
     {

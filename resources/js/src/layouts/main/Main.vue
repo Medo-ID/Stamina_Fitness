@@ -26,7 +26,7 @@
 
     <v-nav-menu
       :navMenuItems = "navMenuItems"
-      title         = "Vuexy"
+      title         = "Stamina"
       parent        = ".layout--main" />
 
     <div id="content-area" :class="[contentAreaClass, {'show-overlay': bodyOverlay}]">
@@ -69,17 +69,17 @@
             <transition :name="routerTransition">
 
               <div v-if="$route.meta.breadcrumb || $route.meta.pageTitle" class="router-header flex flex-wrap items-center mb-6">
-                <div
+                <!-- <div
                   class="content-area__heading"
                   :class="{'pr-4 border-0 md:border-r border-solid border-grey-light' : $route.meta.breadcrumb}">
                   <h2 class="mb-1">{{ $t(routeTitle) }}</h2>
-                </div>
+                </div> -->
 
                 <!-- BREADCRUMB -->
-                <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" />
+                <!-- <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" /> -->
 
                 <!-- DROPDOWN -->
-                <vs-dropdown vs-trigger-click class="ml-auto md:block hidden cursor-pointer">
+                <!-- <vs-dropdown vs-trigger-click class="ml-auto md:block hidden cursor-pointer">
                   <vs-button radius icon="icon-settings" icon-pack="feather" />
 
                   <vs-dropdown-menu class="w-32">
@@ -103,7 +103,7 @@
                     </vs-dropdown-item>
                   </vs-dropdown-menu>
 
-                </vs-dropdown>
+                </vs-dropdown> -->
 
               </div>
             </transition>

@@ -37,7 +37,7 @@
                         <div class="flex flex-wrap">
 
                             <!-- SORTING -->
-                            <ais-sort-by :items="[
+                            <!-- <ais-sort-by :items="[
                                 { value: 'instant_search', label: 'Featured' },
                                 { value: 'instant_search_price_asc', label: 'Lowest Price' },
                                 { value: 'instant_search_price_desc', label: 'Highest Price' },
@@ -49,7 +49,7 @@
                                     class="mr-4 vs-input-shadow-drop vs-select-no-border d-theme-input-dark-bg w-48">
                                     <vs-select-item v-for="item in items" :key="item.value" :value="item.value" :text="item.label" />
                                 </vs-select>
-                            </ais-sort-by>
+                            </ais-sort-by> -->
 
                             <!-- ITEM VIEW - GRID/LIST -->
                             <div>
@@ -80,7 +80,7 @@
                     <div class="p-6 filter-container">
 
                         <!-- MULTI RANGE -->
-                        <h6 class="font-bold mb-3">Multi Range</h6>
+                        <!-- <h6 class="font-bold mb-3">Multi Range</h6>
                         <ais-numeric-menu attribute="price" :items="numericItems">
                             <ul slot-scope="{ items, refine, createURL }">
                                 <li
@@ -95,10 +95,10 @@
                             </ul>
                         </ais-numeric-menu>
 
-                        <vs-divider />
+                        <vs-divider /> -->
 
                         <!-- PRICE SLIDER -->
-                        <h6 class="font-bold mb-3">Price Slider</h6>
+                        <!-- <h6 class="font-bold mb-3">Price Slider</h6>
                         <ais-range-input attribute="price">
                             <div slot-scope="{ currentRefinement, range, refine }">
                                 <vs-slider
@@ -111,7 +111,7 @@
                             </div>
                         </ais-range-input>
 
-                        <vs-divider />
+                        <vs-divider /> -->
 
                         <!-- CATEGORIES -->
                         <h6 class="font-bold mb-4">Category</h6>
@@ -132,7 +132,7 @@
                         <vs-divider />
 
                         <!-- Brands -->
-                        <h6 class="font-bold mb-4">Brand</h6>
+                        <!-- <h6 class="font-bold mb-4">Brand</h6>
                         <ais-refinement-list attribute="brand">
                             <div slot-scope="{
                               items,
@@ -148,10 +148,10 @@
                                 </ul>
                             </div>
                         </ais-refinement-list>
-                        <vs-divider />
+                        <vs-divider /> -->
 
                         <!-- Rating -->
-                        <h6 class="font-bold mb-3">Rating</h6>
+                        <!-- <h6 class="font-bold mb-3">Rating</h6>
                         <ais-rating-menu attribute="rating">
                             <ul slot-scope="{ items, refine, createURL }">
                                 <li v-for="item in items" :key="item.value" class="mb-2">
@@ -166,7 +166,7 @@
                             </ul>
                         </ais-rating-menu>
 
-                        <vs-divider />
+                        <vs-divider /> -->
 
                         <ais-clear-refinements class="flex justify-center">
                             <vs-button class="w-full" slot-scope="{ canRefine, refine, createURL }" @click.prevent="refine" :disabled="!canRefine">Remove Filters</vs-button>
@@ -298,7 +298,7 @@
                     </ais-pagination>
 
                     <!-- ALGOLIA LOGO -->
-                    <img class="flex mt-4 mx-auto h-8" src="@assets/images/pages/eCommerce/Algolia-logo.png" alt="algolia-logo">
+                    <!-- <img class="flex mt-4 mx-auto h-8" src="@assets/images/pages/eCommerce/Algolia-logo.png" alt="algolia-logo"> -->
                 </div>
             </div>
         </ais-instant-search>

@@ -8,17 +8,17 @@ export default {
       // {title: "eCommerce Dashboard",        url: "/dashboard/ecommerce",                icon: "HomeIcon",           is_bookmarked: true},
 
       // APPS
-      {title: "Todo",                       url: "/apps/todo",                          icon: "CheckSquareIcon",    is_bookmarked: false},
+      // {title: "Todo",                    url: "/apps/todo",                          icon: "CheckSquareIcon",    is_bookmarked: false},
       {title: "Chat",                       url: "/apps/chat",                          icon: "MessageSquareIcon",  is_bookmarked: false},
-      {title: "Email",                      url: "/apps/email",                         icon: "MailIcon",           is_bookmarked: false},
+      // {title: "Email",                   url: "/apps/email",                         icon: "MailIcon",           is_bookmarked: false},
       {title: "Calendar",                   url: "/apps/calendar/vue-simple-calendar",  icon: "CalendarIcon",       is_bookmarked: false},
-      {title: "E-Commerce Shop",            url: "/apps/eCommerce/shop",                icon: "ShoppingCartIcon",   is_bookmarked: false},
-      {title: "E-Commerce Item Detail",     url: "/apps/eCommerce/item",                icon: "SmartphoneIcon",     is_bookmarked: false},
-      {title: "E-Commerce Wish List",       url: "/apps/eCommerce/wish-list",           icon: "HeartIcon",          is_bookmarked: false},
-      {title: "E-Commerce Checkout",        url: "/apps/eCommerce/checkout",            icon: "CreditCardIcon",     is_bookmarked: false},
-      {title: "User List",                  url: "/apps/user/user-list",                icon: "ListIcon",           is_bookmarked: false},
+      {title: "Programs",                   url: "/apps/eCommerce/shop",                icon: "ShoppingCartIcon",   is_bookmarked: false},
+      {title: "All Programs",               url: "/apps/eCommerce/item",                icon: "SmartphoneIcon",     is_bookmarked: false},
+      {title: "Favorits Programs",          url: "/apps/eCommerce/wish-list",           icon: "HeartIcon",          is_bookmarked: false},
+      {title: "Add Program",                url: "/apps/eCommerce/checkout",            icon: "CreditCardIcon",     is_bookmarked: false},
+      // {title: "User List",               url: "/apps/user/user-list",                icon: "ListIcon",           is_bookmarked: false},
       {title: "User View",                  url: "/apps/user/user-view/268",            icon: "UserIcon",           is_bookmarked: false},
-      {title: "User Edit",                  url: "/apps/user/user-edit/268",            icon: "EditIcon",           is_bookmarked: false},
+      // {title: "User Edit",               url: "/apps/user/user-edit/268",            icon: "EditIcon",           is_bookmarked: false},
     ]
   }
 }

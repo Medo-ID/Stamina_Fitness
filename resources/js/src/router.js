@@ -26,7 +26,7 @@ Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
-  base: '/',
+  base: '/app',
   scrollBehavior () {
     return { x: 0, y: 0 }
   },
@@ -36,7 +36,7 @@ const router = new Router({
     // =============================================================================
     // MAIN LAYOUT ROUTES
     // =============================================================================
-      path: '',
+      path: '/',
       component: () => import('./layouts/main/Main.vue'),
       children: [
         // =============================================================================

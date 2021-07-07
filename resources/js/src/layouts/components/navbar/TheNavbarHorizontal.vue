@@ -19,7 +19,7 @@
         <span class="vx-logo-text text-primary">Stamina Fitness</span>
       </router-link>
 
-      <i18n />
+      <!-- <i18n /> -->
 
       <search-bar />
 
