@@ -151,6 +151,37 @@ mock.onPost('/api/apps/todo/tasks/').reply((request) => {
 })
 
 
+// GET: Fetch Todos
+/*
+mock.onGet('api/apps/todo/tasks').reply((request) => {
+
+  const filter = request.params.filter
+
+  const filteredTasks = data.tasks.filter((task) => {
+
+    // If filter == all
+    if (filter === 'all') return !task.isTrashed
+
+    // If filter == starred
+    if (filter === 'starred') return !task.isTrashed && task.isStarred
+
+    // If filter == important
+    if (filter === 'important') return !task.isTrashed && task.isImportant
+
+    // If filter == completed
+    if (filter === 'completed') return !task.isTrashed && task.isCompleted
+
+    // If filter == trashed
+    if (filter === 'trashed') return task.isTrashed
+
+    else return task.tags.includes(filter)
+
+  })
+
+
+  return [200, JSON.parse(JSON.stringify(filteredTasks)).reverse()]
+})
+*/
 
 // GET: Fetch tags
 mock.onGet('api/apps/todo/tags').reply(() => {

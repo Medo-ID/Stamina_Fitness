@@ -25,3 +25,10 @@ Route::get('apps/todo/tasks/{id}', 'ToDoController@show');
 Route::post('apps/todo/tasks', 'ToDoController@store');
 Route::put('apps/todo/tasks/{id}', 'ToDoController@update');
 Route::delete('apps/todo/tasks/{id}', 'ToDoController@delete');
+
+/* Programs */
+Route::get('programs', 'ProgramController@index');
+Route::get('programs/{program}', 'ProgramController@show');
+Route::post('programs', 'ProgramController@store');
+Route::put('programs/{program}', 'ProgramController@update');
+Route::delete('programs/{program}', 'ProgramController@delete');
