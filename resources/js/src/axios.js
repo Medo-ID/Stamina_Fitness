@@ -1,7 +1,7 @@
 // axios
 import axios from 'axios'
 
-const baseURL = 'https://staminafitness.test'
+const baseURL = 'https://staminav2.test'
 
 export default axios.create({
   baseURL

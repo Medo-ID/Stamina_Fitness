@@ -24,7 +24,7 @@ const jwtConfig = {
   'expireTime': 8000
 }
 
-
+/*
 mock.onPost('/api/auth/login').reply((request) => {
   const {email, password} = JSON.parse(request.data)
 
@@ -60,6 +60,7 @@ mock.onPost('/api/auth/login').reply((request) => {
 
 
 })
+
 
 mock.onPost('/api/auth/register').reply((request) => {
   const {displayName, email, password} = JSON.parse(request.data)
@@ -128,7 +129,7 @@ mock.onPost('/api/auth/refresh-token').reply((request) => {
     return [401, {error}]
   }
 })
-
+*/
 
 mock.onGet('/api/user/checkpoint-reward').reply(() => {
   return [200, data.checkpointReward]
