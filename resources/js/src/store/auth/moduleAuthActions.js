@@ -329,17 +329,17 @@ export default {
   },
   registerUserJWT ({ commit }, payload) {
 
-    const { displayName, email, password, confirmPassword } = payload.userDetails
+    const { name, email, password, c_password } = payload.userDetails
 
     return new Promise((resolve, reject) => {
 
       // Check confirm password
-      if (password !== confirmPassword) {
+      if (password !== c_password) {
         reject({message: 'Password doesn\'t match. Please try again.'})
       }
-
-      jwt.registerUser(displayName, email, password)
+      jwt.registerUser(name, email, password, c_password)
         .then(response => {
+          console.log("helloooo");
           // Redirect User
           router.push(router.currentRoute.query.to || '/')
 

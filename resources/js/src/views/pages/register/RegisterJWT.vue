@@ -10,6 +10,7 @@ Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
 
 <template>
   <div class="clearfix">
+    <input type="hidden" name="_token" :value="csrf">
     <vs-input
       v-validate="'required|alpha_dash|min:3'"
       data-vv-validate-on="blur"
@@ -57,7 +58,7 @@ Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
 
     <vs-checkbox v-model="isTermsConditionAccepted" class="mt-6">I accept the terms & conditions.</vs-checkbox>
     <vs-button  type="border" to="/pages/login" class="mt-6">Login</vs-button>
-    <vs-button class="float-right mt-6" @click="registerUserJWt" :disabled="!validateForm">Register</vs-button>
+    <vs-button class="float-right mt-6" @click="register" :disabled="!validateForm">Register</vs-button>
   </div>
 </template>
 
@@ -69,7 +70,8 @@ export default {
       email: '',
       password: '',
       confirm_password: '',
-      isTermsConditionAccepted: true
+      isTermsConditionAccepted: true,
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     }
   },
   computed: {
@@ -78,6 +80,27 @@ export default {
     }
   },
   methods: {
+    register() {
+      // if (!this.validateForm || !this.checkLogin()) return
+      /*
+          this.$http.post('/api/auth/register', {
+            name: this.displayName,
+            email: this.email,
+            password: this.password,
+            c_password: this.confirm_password
+          }).then(res => console.log(res)) */
+          const payload = {
+          userDetails: {
+            name: this.displayName,
+            email: this.email,
+            password: this.password,
+            c_password: this.confirm_password
+          },
+          notify: this.$vs.notify
+        
+      }
+      this.$store.dispatch('auth/registerUserJWT', payload)
+    },    
     checkLogin () {
       // If user is already logged in notify
       if (this.$store.state.auth.isUserLoggedIn()) {
@@ -103,12 +126,13 @@ export default {
 
       const payload = {
         userDetails: {
-          displayName: this.displayName,
+          name: this.displayName,
           email: this.email,
           password: this.password,
-          confirmPassword: this.confirm_password
+          c_password: this.confirm_password
         },
         notify: this.$vs.notify
+        
       }
       this.$store.dispatch('auth/registerUserJWT', payload)
     }

@@ -44,18 +44,21 @@ export default {
       return Promise.reject(error)
     })
   },
-  login (email, pwd) {
+  login (email, password) {
     return axios.post('/api/auth/login', {
       email,
-      password: pwd
+      password: password
     })
   },
-  registerUser (name, email, pwd) {
-    return axios.post('/api/auth/register', {
-      displayName: name,
+  registerUser (name, email, password, c_password) {
+    var posted = axios.post('/api/auth/register', {
+      name: name,
       email,
-      password: pwd
-    })
+      password: password,
+      c_password
+    });
+    console.log(posted);
+    return posted;
   },
   refreshToken () {
     return axios.post('/api/auth/refresh-token', {accessToken: localStorage.getItem('accessToKen')})
