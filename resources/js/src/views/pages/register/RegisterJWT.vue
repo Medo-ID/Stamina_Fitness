@@ -82,12 +82,24 @@ export default {
   methods: {
     register() {
       // if (!this.validateForm || !this.checkLogin()) return
+      /*
           this.$http.post('/api/auth/register', {
             name: this.displayName,
             email: this.email,
             password: this.password,
             c_password: this.confirm_password
-          }).then(res => console.log(res))
+          }).then(res => console.log(res)) */
+          const payload = {
+          userDetails: {
+            name: this.displayName,
+            email: this.email,
+            password: this.password,
+            c_password: this.confirm_password
+          },
+          notify: this.$vs.notify
+        
+      }
+      this.$store.dispatch('auth/registerUserJWT', payload)
     },    
     checkLogin () {
       // If user is already logged in notify
