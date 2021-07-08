@@ -41,9 +41,9 @@ export default [
     //     i18n: 'Analytics'
   },
       // {
-      //   url: '/dashboard/ecommerce',
+      //   url: '/dashboard/eCommerce',
       //   name: 'eCommerce',
-      //   slug: 'dashboard-ecommerce',
+      //   slug: 'dashboard-eCommerce',
       //   i18n: 'eCommerce'
       // }
   {
@@ -80,7 +80,7 @@ export default [
       },
       {
         url: null,
-        name: 'Programs',
+        name: 'eCommerce',
         icon: 'PackageIcon',
         i18n: 'Programs',
         submenu: [
@@ -93,7 +93,7 @@ export default [
             // {
             //   url: '/apps/eCommerce/item/',
             //   name: 'Item Details',
-            //   slug: 'ecommerce-item-detail-view',
+            //   slug: 'eCommerce-item-detail-view',
             //   i18n: 'ItemDetails'
             // },
           {

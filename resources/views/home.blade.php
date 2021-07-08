@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logo/logo.png">
+    <title>Stamina | Fitness - Home</title>
 </head>
 <body>
     <div>
@@ -21,7 +22,7 @@
         <img class="logo_home" src="{{ asset('images/imgs/logo_nav2.png') }}" alt="logo_stamina">
         <div class="log">
             <button class="log-link_container"><a class="log-link" href="{{ url('/app/pages/login') }}">Log In</a></button>
-            <button class="log-link_container"><a class="log-link" href="#">Sign Up</a></button>
+            <button class="log-link_container"><a class="log-link" href="{{ url('/app/pages/register') }}">Sign Up</a></button>
         </div>
         </div>
         <section>
@@ -31,8 +32,8 @@
             <!-- <p style="background-color: #EFC411;color: #111821; margin-top: 5px; width: 500px;">No Matter who you are Or Where you are</p>
             <p style="background-color: #EFC411;color: #111821; margin-top: 5px; width: 500px;">You Can Join us Any Time And Any Where</p> -->
             <div class="join-links">
-                <button class="join-link"><a href="#">Join us as a Coach</a></button>
-                <button class="join-link"><a href="#">Join us as a Trainee</a></button>
+                <button class="join-link"><a href="{{ url('/app/pages/register') }}">Join us as a Coach</a></button>
+                <button class="join-link"><a href="{{ url('/app/pages/register') }}">Join us as a Trainee</a></button>
             </div>
             </div>
         </section>
@@ -130,11 +131,11 @@
                 </div>
               </div>
               <div class="join-links2">
-                <button class="join-link2"><a href="#">Join us as a Coach</a></button>
+                <button class="join-link2"><a href="{{ url('/app/pages/register') }}">Join us as a Coach</a></button>
                 
               </div>
               <div class="join-links2">
-                <button class="join-link2"><a href="#">Join us as a Trainee</a></button>
+                <button class="join-link2"><a href="{{ url('/app/pages/register') }}">Join us as a Trainee</a></button>
               </div>
             </div>
         </section>
@@ -165,9 +166,9 @@
               <div class="foter2">
                 <h1 class="footer_joinus">Join Us</h1>
                 <ul>
-                  <li><a class="foter_links" href="">Join us as a coach</a></li>
-                  <li><a class="foter_links" href="">Join us as a Trainee</a></li>
-                  <li><a class="foter_links" href="">Login</a></li>
+                  <li><a class="foter_links" href="{{ url('/app/pages/register') }}">Join us as a coach</a></li>
+                  <li><a class="foter_links" href="{{ url('/app/pages/register') }}">Join us as a Trainee</a></li>
+                  <li><a class="foter_links" href="{{ url('/app/pages/login') }}">Login</a></li>
                 </ul>
               </div>
               <div class="foter3">

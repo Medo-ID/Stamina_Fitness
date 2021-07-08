@@ -1,5 +1,5 @@
 <!-- =========================================================================================
-  File Name: ECommerceShop.vue
+  File Name: eCommerceShop.vue
   Description: eCommerce Shop Page
   ----------------------------------------------------------------------------------------
   Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
@@ -115,7 +115,7 @@
 
                         <!-- CATEGORIES -->
                         <h6 class="font-bold mb-4">Category</h6>
-                        <ais-hierarchical-menu :attributes="algoliaCategories">
+                        <!-- <ais-hierarchical-menu :attributes="algoliaCategories">
                             <div slot-scope="{
                               items,
                               refine,
@@ -127,7 +127,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </ais-hierarchical-menu>
+                        </ais-hierarchical-menu> -->
 
                         <vs-divider />
 
@@ -209,27 +209,27 @@
                         <div slot-scope="{ items }">
 
                             <!-- GRID VIEW -->
-                            <template v-if="currentItemView == 'item-grid-view'">
+                            <!-- <template v-if="currentItemView == 'item-grid-view'">
                                 <div class="items-grid-view vx-row match-height">
                                     <div class="vx-col lg:w-1/3 sm:w-1/2 w-full" v-for="item in items" :key="item.objectID">
 
-                                        <item-grid-view :item="item">
+                                        <item-grid-view :item="item"> -->
 
                                             <!-- SLOT: ACTION BUTTONS -->
-                                            <template slot="action-buttons">
-                                                <div class="flex flex-wrap">
+                                            <!-- <template slot="action-buttons">
+                                                <div class="flex flex-wrap"> -->
 
                                                     <!-- PRIMARY BUTTON: ADD TO WISH LIST -->
-                                                    <div
+                                                    <!-- <div
                                                         class="item-view-primary-action-btn p-3 flex flex-grow items-center justify-center cursor-pointer"
                                                         @click="toggleItemInWishList(item)">
                                                         <feather-icon icon="HeartIcon" :svgClasses="[{'text-danger fill-current' : isInWishList(item.objectID)}, 'h-4 w-4']" />
 
                                                         <span class="text-sm font-semibold ml-2">WISHLIST</span>
-                                                    </div>
+                                                    </div> -->
 
                                                     <!-- SECONDARY BUTTON: ADD-TO/VIEW-IN CART -->
-                                                    <div
+                                                    <!-- <div
                                                         class="item-view-secondary-action-btn bg-primary p-3 flex flex-grow items-center justify-center text-white cursor-pointer"
                                                         @click="cartButtonClicked(item)">
                                                         <feather-icon icon="ShoppingBagIcon" svgClasses="h-4 w-4" />
@@ -243,16 +243,16 @@
 
                                     </div>
                                 </div>
-                            </template>
+                            </template> -->
 
                             <!-- LIST VIEW -->
-                            <template v-else>
+                            <!-- <template v-else>
                                 <div class="items-list-view mb-base" v-for="item in items" :key="item.objectID">
 
-                                    <item-list-view :item="item">
+                                    <item-list-view :item="item"> -->
 
                                         <!-- SLOT: ACTION BUTTONS -->
-                                        <template slot="action-buttons">
+                                        <!-- <template slot="action-buttons">
                                             <div
                                                 class="item-view-primary-action-btn p-3 rounded-lg flex flex-grow items-center justify-center cursor-pointer mb-3"
                                                 @click="toggleItemInWishList(item)">
@@ -271,12 +271,12 @@
                                     </item-list-view>
 
                                 </div>
-                            </template>
+                            </template> -->
                         </div>
                     </ais-hits>
 
                     <!-- PAGINATION -->
-                    <ais-pagination>
+                    <!-- <ais-pagination>
                         <div slot-scope="{
                                 currentRefinement,
                                 nbPages,
@@ -295,7 +295,7 @@
                             :value="currentRefinement + 1"
                             @input="(val) => { refine(val - 1) }" />
                         </div>
-                    </ais-pagination>
+                    </ais-pagination> -->
 
                     <!-- ALGOLIA LOGO -->
                     <!-- <img class="flex mt-4 mx-auto h-8" src="@assets/images/pages/eCommerce/Algolia-logo.png" alt="algolia-logo"> -->

@@ -1,15 +1,15 @@
 /*=========================================================================================
-  File Name: moduleecommerce.js
-  Description: ecommerce Module
+  File Name: moduleeCommerce.js
+  Description: eCommerce Module
   ----------------------------------------------------------------------------------------
   
 ==========================================================================================*/
 
 
-import state from './moduleECommerceState.js'
-import mutations from './moduleECommerceMutations.js'
-import actions from './moduleECommerceActions.js'
-import getters from './moduleECommerceGetters.js'
+import state from './moduleeCommerceState.js'
+import mutations from './moduleeCommerceMutations.js'
+import actions from './moduleeCommerceActions.js'
+import getters from './moduleeCommerceGetters.js'
 
 export default {
   namespaced: true,

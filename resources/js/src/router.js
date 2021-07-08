@@ -55,9 +55,9 @@ const router = new Router({
           }
         },
         // {
-        //   path: '/dashboard/ecommerce',
-        //   name: 'dashboard-ecommerce',
-        //   component: () => import('./views/DashboardECommerce.vue'),
+        //   path: '/dashboard/eCommerce',
+        //   name: 'dashboard-eCommerce',
+        //   component: () => import('./views/DashboardeCommerce.vue'),
         //   meta: {
         //     rule: 'admin'
         //   }
@@ -115,8 +115,8 @@ const router = new Router({
         },
         {
           path: '/apps/eCommerce/shop',
-          name: 'ecommerce-shop',
-          component: () => import('./views/apps/eCommerce/ECommerceShop.vue'),
+          name: 'eCommerce-shop',
+          component: () => import('./views/apps/eCommerce/eCommerceShop.vue'),
           meta: {
             breadcrumb: [
               { title: 'Home', url: '/' },
@@ -129,8 +129,8 @@ const router = new Router({
         },
         {
           path: '/apps/eCommerce/wish-list',
-          name: 'ecommerce-wish-list',
-          component: () => import('./views/apps/eCommerce/ECommerceWishList.vue'),
+          name: 'eCommerce-wish-list',
+          component: () => import('./views/apps/eCommerce/eCommerceWishList.vue'),
           meta: {
             breadcrumb: [
               { title: 'Home', url: '/' },
@@ -143,8 +143,8 @@ const router = new Router({
         },
         {
           path: '/apps/eCommerce/checkout',
-          name: 'ecommerce-checkout',
-          component: () => import('./views/apps/eCommerce/ECommerceCheckout.vue'),
+          name: 'eCommerce-checkout',
+          component: () => import('./views/apps/eCommerce/eCommerceCheckout.vue'),
           meta: {
             breadcrumb: [
               { title: 'Home', url: '/' },
@@ -160,7 +160,7 @@ const router = new Router({
                   You can use this route in your app
                     {
                         path: '/apps/eCommerce/item/',
-                        name: 'ecommerce-item-detail-view',
+                        name: 'eCommerce-item-detail-view',
                         redirect: '/apps/eCommerce/shop',
                     }
                 */
@@ -170,16 +170,16 @@ const router = new Router({
         },
         {
           path: '/apps/eCommerce/item/:item_id',
-          name: 'ecommerce-item-detail-view',
-          component: () => import('./views/apps/eCommerce/ECommerceItemDetailView.vue'),
+          name: 'eCommerce-item-detail-view',
+          component: () => import('./views/apps/eCommerce/eCommerceItemDetailView.vue'),
           meta: {
             breadcrumb: [
               { title: 'Home', url: '/' },
               { title: 'eCommerce'},
-              { title: 'Shop', url: {name: 'ecommerce-shop'} },
+              { title: 'Shop', url: {name: 'eCommerce-shop'} },
               { title: 'Item Details', active: true }
             ],
-            parent: 'ecommerce-item-detail-view',
+            parent: 'eCommerce-item-detail-view',
             pageTitle: 'Item Details',
             rule: 'editor'
           }
