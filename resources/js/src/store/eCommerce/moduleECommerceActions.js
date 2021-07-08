@@ -1,6 +1,6 @@
 /*=========================================================================================
-  File Name: moduleEcommerceActions.js
-  Description: Ecommerce Module Actions
+  File Name: moduleeCommerceActions.js
+  Description: eCommerce Module Actions
   ----------------------------------------------------------------------------------------
   
 ==========================================================================================*/

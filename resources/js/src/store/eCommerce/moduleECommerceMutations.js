@@ -1,6 +1,6 @@
 /*=========================================================================================
-  File Name: moduleEcommerceMutations.js
-  Description: Ecommerce Module Mutations
+  File Name: moduleeCommerceMutations.js
+  Description: eCommerce Module Mutations
   ----------------------------------------------------------------------------------------
   
 ==========================================================================================*/

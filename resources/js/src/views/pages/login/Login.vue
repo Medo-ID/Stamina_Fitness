@@ -15,7 +15,7 @@
           <div class="vx-row no-gutter justify-center items-center">
 
             <div class="vx-col hidden lg:block lg:w-1/2">
-              <img src="@assets/images/pages/login.png" alt="login" class="mx-auto">
+              <img src="@assets/images/pages/login.jpg" alt="login" class="mx-auto">
             </div>
 
             <div class="vx-col sm:w-full md:w-full lg:w-1/2 d-theme-dark-bg">
@@ -27,16 +27,8 @@
                 </div>
 
                 <vs-tabs>
-                  <vs-tab label="JWT">
+                  <vs-tab label="Welcome">
                     <login-jwt></login-jwt>
-                  </vs-tab>
-
-                  <vs-tab label="Firebase">
-                    <login-firebase></login-firebase>
-                  </vs-tab>
-
-                  <vs-tab label="Auth0">
-                    <login-auth0></login-auth0>
                   </vs-tab>
                 </vs-tabs>
 

@@ -1,18 +1,18 @@
 <!-- =========================================================================================
-  File Name: ECommerceCheckout.vue
+  File Name: eCommerceCheckout.vue
   Description: eCommerce Checkout page
   ----------------------------------------------------------------------------------------
   
 ========================================================================================== -->
 
 <template>
-    <div id="ecommerce-checkout-demo">
+    <div id="eCommerce-checkout-demo">
       <h1>Coming soon</h1>
         
 
                 <!-- IF NO ITEMS IN CART -->
               <vx-card title="Add New Program">
-                  <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse Programs</vs-button>
+                  <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse eCommerce</vs-button>
               </vx-card>
 
             
@@ -133,7 +133,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#ecommerce-checkout-demo {
+#eCommerce-checkout-demo {
     .item-view-primary-action-btn {
         color: #2c2c2c !important;
         background-color: #f6f6f6;

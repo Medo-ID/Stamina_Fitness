@@ -6,7 +6,7 @@ const data = {
       'id': 1,
       'category': 'Abs',
       'img': 'https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/products/01.png',
-      'name': 'Apple Watch series 4 GPS',
+      'name': 'Program 6 pack abs 3 month',
       'order_status': 'on_hold',
       'popularity': 97,
       'price': 69.99
@@ -37,7 +37,7 @@ const data = {
       'order_status': 'delivered',
       'popularity': 65,
       'price': 199.99
-    },
+    }
     // {
     //   'id': 5,
     //   'category': 'audio',

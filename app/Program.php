@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class eCommerce extends Model
+class Program extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,6 +12,6 @@ class eCommerce extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'desc', 'category', 'img', 'program'
+        'name', 'type', 'gif',
     ];
 }

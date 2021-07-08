@@ -1,5 +1,5 @@
 <!-- =========================================================================================
-  File Name: ECommerceItemDetail.vue
+  File Name: eCommerceItemDetail.vue
   Description: eCommerce Item Detail page
   ----------------------------------------------------------------------------------------
   
@@ -11,7 +11,7 @@
     <vs-alert color="danger" title="Error Fetching Product Data" :active.sync="error_occured">
       <span>{{ error_msg }}. </span>
       <span>
-        <span>Check </span><router-link :to="{name:'ecommerce-shop'}" class="text-inherit underline">All Items</router-link>
+        <span>Check </span><router-link :to="{name:'eCommerce-shop'}" class="text-inherit underline">All Items</router-link>
       </span>
     </vs-alert>
 
@@ -119,7 +119,7 @@
                         class="mr-4 mb-4"
                         icon-pack="feather"
                         icon="icon-shopping-cart"
-                        @click="$router.push({name: 'ecommerce-checkout'}).catch(err => {})">
+                        @click="$router.push({name: 'eCommerce-checkout'}).catch(err => {})">
                         VIEW IN CART
                       </vs-button>
                       <!-- /Add To Cart Button -->

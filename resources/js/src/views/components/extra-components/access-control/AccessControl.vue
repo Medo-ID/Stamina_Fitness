@@ -89,7 +89,7 @@
 
             <vx-card title="Route Protection" no-shadow card-border code-toggler class="mt-base">
               <p>You can add <strong>route protection</strong> using vue-acl. Only admin can visit eCommerce Dashboard.</p>
-              <vs-button to="/dashboard/ecommerce" class="mt-4" :color="$acl.check('admin') ? 'primary' : 'danger'">visit</vs-button>
+              <vs-button to="/dashboard/eCommerce" class="mt-4" :color="$acl.check('admin') ? 'primary' : 'danger'">visit</vs-button>
             </vx-card>
         </vx-card>
     </div>

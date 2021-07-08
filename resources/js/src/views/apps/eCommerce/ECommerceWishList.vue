@@ -1,12 +1,12 @@
 <!-- =========================================================================================
-  File Name: ECommerceWishList.vue
+  File Name: eCommerceWishList.vue
   Description: eCommerce Wish List Page
   ----------------------------------------------------------------------------------------
   
 ========================================================================================== -->
 
 <template>
-  <div id="ecommerce-wishlist-demo">
+  <div id="eCommerce-wishlist-demo">
         <div class="items-grid-view vx-row match-height" v-if="wishListitems.length" appear>
             <div class="vx-col lg:w-1/4 md:w-1/3 sm:w-1/2 w-full" v-for="item in wishListitems" :key="item.objectID">
 
@@ -42,8 +42,8 @@
         </div>
 
         <!-- IF NO ITEMS IN CART -->
-        <vx-card title="You don't have any programs in your favorits list." v-else>
-            <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse Programs</vs-button>
+        <vx-card title="You don't have any Programs in your favorits list." v-else>
+            <vs-button @click="$router.push('/apps/eCommerce/shop').catch(() => {})">Browse eCommerce</vs-button>
         </vx-card>
   </div>
 </template>
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#ecommerce-wishlist-demo {
+#eCommerce-wishlist-demo {
     .item-view-primary-action-btn {
         color: #2c2c2c !important;
         background-color: #f6f6f6;

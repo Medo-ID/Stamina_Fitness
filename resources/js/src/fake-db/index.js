@@ -10,4 +10,4 @@ import './data/user/index.js'
 // Apps
 import './data/apps/index.js'
 
-mock.onAny().passThrough() // forwards the matched request over network
+// mock.onAny().passThrough() // forwards the matched request over network

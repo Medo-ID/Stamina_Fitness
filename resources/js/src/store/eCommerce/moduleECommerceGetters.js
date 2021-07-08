@@ -1,6 +1,6 @@
 /*=========================================================================================
-  File Name: moduleEcommerceGetters.js
-  Description: Ecommerce Module Getters
+  File Name: moduleeCommerceGetters.js
+  Description: eCommerce Module Getters
   ----------------------------------------------------------------------------------------
   
 ==========================================================================================*/

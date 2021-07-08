@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateeCommerceTable extends Migration
+class CreateProgramsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateeCommerceTable extends Migration
      */
     public function up()
     {
-        Schema::create('eCommerce', function (Blueprint $table) {
+        Schema::create('programs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('desc');
-            $table->string('category');
-            $table->string('img');
-            $table->json('program');
+            $table->string('type');
+            $table->string('gif');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateeCommerceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('eCommerce');
+        Schema::dropIfExists('programs');
     }
 }
